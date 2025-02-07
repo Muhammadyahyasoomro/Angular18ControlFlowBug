@@ -1,0 +1,30 @@
+.circle{
+    border : 1px solid red;
+    border-radius: 50%;
+    width: 10%;
+    background-color: red;
+}
+.circle:active:hover{
+    border : 1px solid orange;
+    border-radius: 50%;
+    width: 10%;
+    background-color: orange;
+
+}
+.circle:hover{
+    border : 1px solid green;
+    border-radius: 50%;
+    width: 10%;
+    background-color:green;
+
+
+}
+.rectangle{
+    color:"green";
+        border : 1px solid green;
+        width: 10%;
+        border-radius: 10%;
+        height: 10%;
+        background-color:green;
+
+}

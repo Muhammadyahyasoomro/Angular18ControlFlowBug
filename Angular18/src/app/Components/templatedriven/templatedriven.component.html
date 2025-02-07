@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="card p-4">
+        <div class="container-sm">
+            <form (ngSubmit)="addStudent()" #studentForm="ngForm">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required [(ngModel)]="student.firstName" name="firstName">
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required [(ngModel)]="student.lastName" name="lastName">
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" required [(ngModel)]="student.userName" name="userName">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required [(ngModel)]="student.email" name="email">
+                    <div class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" required [(ngModel)]="student.password" name="password">
+                </div>
+                <div class="mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" required [(ngModel)]="student.city" name="city">
+                </div>
+                <div class="mb-3">
+                    <label for="state" class="form-label">State</label>
+                    <input type="text" class="form-control" id="state" required [(ngModel)]="student.state" name="state">
+                </div>
+                <div class="mb-3">
+                    <label for="zip" class="form-label">Zip Code</label>
+                    <input type="text" class="form-control" id="zip" required [(ngModel)]="student.zip" name="zip">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="termsCheck" required [(ngModel)]="student.isAgreed" name="isAgreed">
+                    <label class="form-check-label" for="termsCheck">Agree to terms and conditions</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="table table-striped">
+  <thead>
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+            <th>gender</th>
+            <th>grade</th>
+            <th>subjects</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of studentArray; track item.id ){
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.gender}}</td>
+                <td>{{item.grade}}</td>
+                <td>  @for (subject of item.subjects; track subject) {
+                    <li>{{ subject }}</li>
+                  }
+                </td>
+            </tr>
+        }
+       
+    </tbody>
+</div>
